@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<style>
+html {
+overflow-x:hidden;
+overflow-y:hidden;
+}
+
+
+.leftbox {
+    width: 10%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+.rightbox {
+    float: right;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+
+}
+.libiao{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+</style>
+<head>
+
+    <meta charset="utf-8">
+</head>
+<body>
+
+    <h1 align="center">重庆交通大学创新实践竞赛数据面板</h1>
+
+    <div class="container" style="height: 100%">
+      <div class="leftbox">
+          <div class="center">
+        <ul class="libiao">
+            <li>
+                <a href="static/templates/参赛人数.html" target="mainframe">历年参赛趋势</a>
+
+            </li>
+
+            <li>
+                <a href="static/templates/学院参赛分布.html" target="mainframe">参赛学院</a></li>
+            <li>
+                <a href="static/templates/每年每个赛题人数.html" target="mainframe">学院参赛人数比例</a></li>
+            <li>
+                <a href="static/templates/学院参赛分布.html" target="mainframe">学院获奖比例</a></li>
+
+        </ul>
+              </div>
+
+          </div>
+      <div class="rightbox" style="height: 100%" >
+          <iframe name="mainframe" id="frame_main" height=100% width='100%'  frameborder="0" align="center"> </iframe>
+          </iframe>
+
+          </div>
+</div>
+</body>
+</html>
