@@ -4,322 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>重庆交通大学创新实践中心</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
-                body {
-            font-family: Arial, sans-serif;
-            background-color:#F0FFFF;
-            background-image: ;
-            text-align: center;
-            color: red;
-            opacity: 0.8; /* 设置透明度为50% */
-        }
-        ul {  
-    list-style-type: none;
-    text-align: center; 
+        body {
+        font-family: Arial, sans-serif;
+        /* background-color:#F0FFFF; */
+        /* background-image: url("https://z1.ax1x.com/2023/11/22/piaLVS0.jpg"); */
+        text-align: center;
+        color: red;
+        opacity: 1; /* 设置透明度为50% */
+    }
+    #container {  
+position: relative;  
+}
 
-  }  
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* 垂直居中 */
+        justify-content: center;  /*水平居中 */
+        height: 100vh; /* 或者其他你需要的高度 */
+        
+    }
+    .card{
+        display: flex; /* 使用flex布局 */
+        padding: 20px; /* 调整内边距 */
+        box-sizing: border-box; /* 内边距不会撑开容器 */
+        border-radius: 10px; /* 设置圆角的大小 */
+        font-family: "楷体";
+        /* border: 2px dashed white; */
+        flex-direction: column;
+        transition: opacity 0.5s ease-in-out; /* 添加渐变效果 */
+        display: none; /* 默认隐藏所有page div */  
+        height: 100vh;
+        overflow: hidden;
+    }
 
-        h1 {
-            font-size: 4em;
-            margin-top: 1%;
-        }
-        p {
-            font-size: 2em;
-        }
-        .swiper-container {
-            width: 100%;
-            height: 100%;
-        }
-        .swiper-slide {
-            display: flex; /* 使用flex布局 */
-            align-items: center; /* 垂直居中 */
-            justify-content: center;  /*水平居中 */
-            padding: 20px; /* 调整内边距 */
-            box-sizing: border-box; /* 内边距不会撑开容器 */
-            border-radius: 10px; /* 设置圆角的大小 */
-            
-        }
-        .swiper-slide  ul{
-            max-width: 30%; /* 图片宽度为卡片的50% */
-            height: auto; /* 高度自适应 */
-            padding: 40px;
-            border-radius: 10px; /* 设置圆角的大小 */
-            border: 2px solid #333; /* 边框样式为实线，宽度为2像素，颜色为深灰色 */
-        }
-        .swiper-slide p {
-            max-width: 30%; /* 图片宽度为卡片的50% */
-            height: auto; /* 高度自适应 */
-            padding: 40px;
-            font-size: 2em;
-            font-family: "楷体";
-            border-radius: 10px; /* 设置圆角的大小 */
-            /*border: 2px solid #333; /* 边框样式为实线，宽度为2像素，颜色为深灰色 */
-        }
 
-    </style>
+</style>
 </head>
 <body>
-    <h1>恭喜你被中国研究生创新实践竞赛包围啦</h1>
-    <p>首先请各位绑定雨课堂获取更多学习资料</br>
-        <ul>  
-            <li>微信关注雨课堂微信公众号</li>
-            <li>
-                <img src="https://z1.ax1x.com/2023/11/17/pit5K2j.png" alt="雨课堂">
-            </li>  
-            <li>点击"更多"一>"身份绑定"</li>  
-            <li>选择重庆交通大学研究生院</li>
-            <li>账号:学号
-            <li>密码:Cqu@学号后六位</li>
-            </li>    
-          </ul>
-    
-    </p>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <p> “中国研究生数学建模竞赛”是由教育部学位管理与研究生教育司指导，中国学位与研究生教育学会、中国科协青少年科技中心主办的“中国研究生创新实践系列大赛” 主题赛事之一，
-                    是面向在校研究生进行数学建模应用研究的学术竞赛活动，是广大在校研究生提高建立数学模型和运用互联网信息技术解决实际问题能力、培养科研创新精神和团队合作意识的大平台。</br>
-                    <a href="https://cpipc.acge.org.cn/cw/hp/4">点击前往官网了解更多详情</a></p>
-
-                <ul>
-                    <li>扫码加入交大竞赛群，寻找给力队友</li>
-                    <li>
-                    <img src="https://z1.ax1x.com/2023/11/17/pitynXD.png" alt="数学建模">
-                </li>
-                </ul>
-                
-            </div>
-            <div class="swiper-slide">
-                <p>中国研究生电子设计竞赛
-                    由技术类竞赛和商业计划书专项赛两大部分组成，
-                    分自主命题和企业命题两种形式。包括“电路与嵌入式系统类”、“机电控制与智能制造类”、“通信与网络技术类”、“信息感知系统与应用类”、“信号和信息处理技术与系统类”、“人工智能类”、“技术探索与交叉学科类”“华为6G先进无线技术探索类”等八大参赛方向
-                    作品涉及内容覆盖了工业、能源、交通、国防、教育、农业、旅游、健康、养老等社会生活多个领域。
-                    竞赛聚焦国家实际需求，顺应产业发展趋势，设置兆易创新命题、华为命题、飞腾命题、优利德命题、景嘉微命题、龙芯命题、广和通命题、TI命题、ARM命题、MathWorks专项奖、Synopsys专项奖、Xilinx专项奖等多项企业命题和专项奖。</br>
-                    <a href="https://cpipc.acge.org.cn/cw/hp/6">点击前往官网了解更多详情</a>
-
-                    </p>
-
-                    <ul>
-                        <li>扫码加入交大竞赛群，寻找给力队友</li>
-                        <li>
-                            <img src="https://z1.ax1x.com/2023/11/17/pitc3SP.png" alt="电子设计">
-                    </li>
-                    </ul>
-            </div>
-            <div class="swiper-slide">
-                <p>中国研究生人工智能创新大赛
-                    以“AI 赋能、创新引领”为理念，围绕人工智能创新主题，引领未来的战略性技术，激发研究生创新意识，提高研究生创新和实践能力，着力培养创新型、复合型、应用型高端人才，为人工智能健康发展提供人才支撑。
-                    大赛的目标是联合多方力量，努力把大赛办成在研究生群体、硏究生培养单位和社会中有较大影响力，被国内外研究生培养单位和企业行业广泛认可的高层次、全国性重要赛事，逐步实现与同类型高水平国际赛事接轨。
-                </br><a href="https://cpipc.acge.org.cn/cw/hp/2c9088a5696cbf370169a3f8101510bd">点击前往官网了解更多详情</a>
-                </p>
-                
-                <ul>
-                    <li>扫码加入交大竞赛群，寻找给力队友</li>
-                    <li>
-                        <img src="https://z1.ax1x.com/2023/11/17/pitchf1.png" alt="人工智能">
-                </li>
-                </ul>
-
-            </div>
-            <div class="swiper-slide">
-                <p>中国研究生未来飞行器创新大赛以“创新改变未来”为理念，围绕飞行器技术创新，着力增强广大研究生创新创业能力、综合实践能力，培养和发掘高素质拔尖创新人才。
-                </br><a href="https://cpipc.acge.org.cn/cw/hp/3">点击前往官网了解更多详情</a>
-                    </p>
-                
-
-                <ul>
-                    <li>扫码加入交大竞赛群，寻找给力队友</li>
-                    <li>
-                        <img src="https://z1.ax1x.com/2023/11/17/pit5Wzd.png" alt="飞行器">
-                </li>
-                </ul>
-
-
-
-            </div>
-            <div class="swiper-slide">
-                <p>中国研究生机器人创新设计大赛以“制造强国”国家战略需求为导向，旨在培养机器人领域国家急需高水平科技创新人才，提升研究生的机器人创新设计能力，服务机器人产业生态体系建设，推动机器人科技与产业的创新发展。
-            </br><a href="https://cpipc.acge.org.cn/cw/hp/2c9088a5696cbf370169a3f8934810be">点击前往官网了解更多详情</a>
-
-        </p>
-            <ul>
-                <li>扫码加入交大竞赛群，寻找给力队友</li>
-                <li>
-                    <img src="https://z1.ax1x.com/2023/11/17/pit55Lt.png" alt="机器人">
-            </li>
-            </ul>
-                
-            </div>
-            <div class="swiper-slide">
-                <p>中国研究生金融科技创新大赛是面向全国在读研究生的一项团体性金融科技相关专业创新实践活动。
-
-                    大赛围绕金融科技创新主题，旨在引导研究生放眼学科领域创新前沿，心系国家发展需求，创造性解决中国金融科技领域实际问题，提高研究生的创新与实践能力，为建设社会主义现代化国家培养创新型人才。
-                    
-                    大赛希望联合全国各高校、科研院所、企业等多方力量，引领全国师生、业内同行，共同打造国内首个由高校组织的金融科技领域的高端学术创新交流平台。
-                </br><a href="https://cpipc.acge.org.cn/cw/hp/2c90800c8093eef401809d3501080654">点击前往官网了解更多详情</a></p>
-                <ul>
-                    <li>扫码加入交大竞赛群，寻找给力队友</li>
-                    <li>
-                        <img src="https://z1.ax1x.com/2023/11/17/pitcqTH.png" alt="金融科技">
-                </li>
-                </ul>
-                
-            </div>
-            <div class="swiper-slide">
-                <p>中国研究生网络安全创新大赛是面向全国在读研究生的一项团体性网络空间安全相关专业创新实践活动。大赛以“汇聚专业英才 共建网络安全”为理念，以国家战略需求为导向，以行业企业参与为支撑，
-                    以提高研究生的创新能力和实践能力为核心，从“产教融合”“科教融合”“赛教融合”等维度设立揭榜挑战赛、创意作品赛和实网对抗赛三个赛道，
-                    重点锻炼研究生的科学创新能力和工程实践能力，力求解决国家在网络空间安全领域的“卡脖子”问题，为国家培养、选拔和储备一批急需的高层次网络安全人才。
-                </br><a href="https://cpipc.acge.org.cn/cw/hp/2c90800c8093eef401809d33b36f0652">点击前往官网了解更多详情</a>
-                   </p>
-                   <ul>
-                    <li>扫码加入交大竞赛群，寻找给力队友</li>
-                    <li>
-                        <img src="https://z1.ax1x.com/2023/11/17/pitcXtA.png" alt="网络安全">
-                </li>
-                </ul>
-                
-            </div>
-            <div class="swiper-slide">
-                <p>中国研究生“双碳”创新与创意大赛以“创意启迪智慧、创新驱动发展”为理念，围绕“智慧双碳，创享未来”主题，以激发研究生创新意识，提高研究生创新和实践能力，为国家、社会和企业培养创新型人才为宗旨而设立。
-                   为进一步增强研究生对“双碳”战略理念的认识，提升研究生服务国家重大战略的自觉性，调动研究生参与双碳建设的积极性，提高碳达峰碳中和相关专业人才培养质量，加大高校与社会之间产学研的深度融合，从而让科研项目及团队的成果获得转化及孵化，助力实现“3060双碳”目标。
-                </br><a href="https://cpipc.acge.org.cn/cw/hp/2c90800c8093eef401809d348f8b0653">点击前往官网了解更多详情</a>
+    <div id="container">
+        <div class="card" style="display: block;">
+            <p>恭喜你被中国研究生创新实践竞赛包围啦</p>
+            <p>首先请各位绑定雨课堂获取更多学习资料</p>
+            <img src="https://z1.ax1x.com/2023/11/17/pit5K2j.png" alt="雨课堂">
+            <p>
+            </br>点击"更多"一>"身份绑定"
+        </br>选择重庆交通大学研究生院
+        </br>账号:学号
+        </br>密码:Cqu@学号后六位
             </p>
-            <ul>
-             <li>扫码加入交大竞赛群，寻找给力队友</li>
-             <li>
-                <img src="https://z1.ax1x.com/2023/11/17/pitcjfI.png" alt="双碳">
-         </li>
-         </ul>
-                
-            </div>
-            <div class="swiper-slide">
-                <p>中国研究生“美丽中国”创新设计大赛（旨在全面呈现、传播“美丽中国”新时代风貌，推动我国艺术设计类研究生教育的专业交流与进步，
-                    激发研究生创新设计意识，提高研究生创新与设计实践能力，培养研究生社会担当与弘扬中华美育精神，向世界积极展示和传播中国文化，讲好中国故事，为国家、社会和企业培养和发掘艺术创新型设计人才，同时推动高校之间、校企之间在艺术设计领域内的创意创想成果转化落地。
-                    本赛事专门面向研究生群体的全国性、公益性创新设计竞赛，坚持“以国家战略需求为导向，以行业企业参与为支撑”的运行模式，
-                    本赛事主要围绕环境空间设计、服装与服饰设计、工业产品设计、媒体传达设计等四个专业赛道以及地方主题定制为动态赛道而展开系列创新设计赛题。
-                </br><a href="https://cpipc.acge.org.cn/cw/hp/2c908018876ef068018774a9501a03fe">点击前往官网了解更多详情</a>
-            </p>
-            <ul>
-             <li>扫码加入交大竞赛群，寻找给力队友</li>
-             <li>
-                <img src="https://z1.ax1x.com/2023/11/17/pitcxpt.png" alt="美丽中国">
-         </li>
-         </ul>
-                
-            </div>
-            <div class="swiper-slide">
-                <p>
-                    我们可以参加的有
-                </br><a href="https://cpipc.acge.org.cn/cw/hp/2c90800c7a132603017a13958b3f05ed">科技小院大赛</a>
-
-                
-            </br><a href="https://cpipc.acge.org.cn/cw/hp/2c90800c7a132603017a139d4bfb06db">乡村振兴志愿服务技能大赛</a>
-
-                </p>
-                <img src="https://z1.ax1x.com/2023/11/17/pitIVyR.png" alt="乡村振兴">
-            </div>
-            <div class="swiper-slide">
-                <div>懂得都懂</div>
-                <img src="https://z1.ax1x.com/2023/11/17/pit5qJg.png" alt="互联网+">
-            </div>
-            <div class="swiper-slide">
-                <p>“中国研究生能源装备创新设计大赛
-
-                    为满足国家装备制造业高层次人才需求，促进机械装备行业的创新发展，培养研究生创新实践能力，
-                大赛以提升研究生创新实践能力为核心，以国家战略需求为导向，按照“竞赛培养人才、人才引领创新、创新驱动发展”的理念，围绕能源装备的技术创新，
-                打造研究生创新交流实践平台，打造政产学研用合作创新平台。大赛旨在激发研究生的创新热情，培养研究生的创新思维，提升研究生的创新实践能力，
-                促进国家能源装备业创新发展。大赛的目标是办成广大研究生踊跃参与，研究生培养单位乐于组织，装备行业广泛认可的国家级、高层次重要赛事。
-            </br><a href="https://cpipc.acge.org.cn/cw/hp/7">点击前往官网了解更多详情</a>
-            </p>
-            <ul>
-             <li>扫码加入交大竞赛群，寻找给力队友</li>
-             <li>
-                <img src="https://z1.ax1x.com/2023/11/17/pit5LWQ.png" alt="能源装备">
-         </li>
-         </ul>
-
-                
-            </div>
-            <div class="swiper-slide">
-                <p>中国研究生智慧城市技术与创意设计大赛大赛以“创意启迪智慧、创新驱动发展”为理念，围绕智慧城市主题，激发研究生创新意识，提高研究生创新和实践能力，为国家、社会和企业培养创新型人才。
-                    大赛的目标是联合多方力量，努力把大赛办成在研究生群体、研究生培养单位和社会中有较大影响力，被国内外研究生培养单位和企业行业广泛认可的高层次、全国性重要赛事，逐步实现与同类型高水平国际赛事接轨。
-                </br><a href="https://cpipc.acge.org.cn/cw/hp/1">点击前往官网了解更多详情</a>
-                </p>
-                <ul>
-                 <li>扫码加入交大竞赛群，寻找给力队友</li>
-                 <li>
-                    <img src="https://z1.ax1x.com/2023/11/17/pitcOkd.png" alt="智慧城市">
-             </li>
-             </ul>
-                
-            </div>
-            <div class="swiper-slide">
-                <p>重庆市“科慧杯”研究生创新实践大赛大赛
-
-                    由重庆市教育委员会主办，重庆大学承办。面向重庆市高等院校在读研究生举行。旨在培育研究生科研创新精神与创业实践能力，促进研究生创新创业。</p>
-
-
-
-                    <ul>
-                        <li>扫码加入交大竞赛群，寻找给力队友</li>
-                        <li>
-                            <img src="https://z1.ax1x.com/2023/11/17/pitIASJ.png" alt="科慧">
-                    </li>
-                    </ul>
-
-                
-            </div>
-            <div class="swiper-slide">
-                <p>中国研究生工程管理案例大赛是是主要面向工程管理专业学位研究生（MEM）及其他相关专业的研究生群体所举办的全国性研究生赛事。
-                    本案例大赛通过积极引导MEM及其他相关专业研究生，通过采集并导入社会实践中的工程管理案例，利用科学的管理工具分析动态数据，提炼总结并共享各个工程领域的生产实际与发展经验。
-                    本案例大赛参与研究和参赛的案例须具有一定的理论基础、过程分析、实践检验以及创新创业思想，能够推动工程管理专业培养与行业资源的紧密对接；
-                    能够服务于新时代研究生教育改革，提升研究生创新能力和实践能力，促进政产学研用合作创新；能够服务于加快建设国家战略人才力量，着力造就拔尖创新人才等重要目标。</p>
-                <img src="image3.jpg" alt="工程管理">
-            </div>
-            <div class="swiper-slide">
-                <p>
-
-                    中国研究生企业管理创新大赛是利用基于互联网的新版企业竞争模拟系统，面向高校研究生的具有中国特色的重要商业模拟竞赛。
-                    大赛运用计算机技术模拟企业的竞争环境，供模拟参赛者进行企业运营和企业决策的演练，实现在复杂多变的经营环境里，
-                    面对多个竞争对手，发扬团队合作精神，全面、灵活地运用如生产管理、市场营销、财务会计、战略管理等管理学知识和预测、优化、对策、决策等方法，正确制定企业的决策，达到企业的战略目标的创新实践能力比拼。
-                    
-                    </p>
-                
-                
-                </p>
-                <img src="image3.jpg" alt="企业管理">
-            </div>
-            <div class="swiper-slide">
-                <p>中国研究生创“芯”大赛服务于国家集成电路产业发展战略，旨在切实提高研究生的创新能力和实践能力，促进集成电路领域优秀人才的培养。
-                    大赛面向中国大陆、港澳台地区在读研究生（硕士生和博士生，含留学生）和已获得研究生入学资格的大四本科生（需提供学校保研、录取证明）及国外高校在读研究生。参赛队伍可提交集成电路芯片设计相关创意、创新或创业作品。
-                </br><a href="https://cpipc.acge.org.cn/cw/hp/10">点击前往官网了解更多详情</a>
-                </p>
-                <ul>
-                 <li>扫码加入交大竞赛群，寻找给力队友</li>
-                 <li>
-                    <img src="https://z1.ax1x.com/2023/11/17/pitIiYF.png" alt="创芯大赛">
-             </li>
-             </ul>
-                
-            </div>
 
             
+            <p>
+                点击查看更多竞赛
+            </p>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
     </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var mySwiper = new Swiper('.swiper-container', {
-            // 配置选项
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            loop: true, // 开启循环模式
-        });
+    <script>  
+        fetch('data.json') // 通过fetch API获取JSON文件  
+            .then(response => response.json()) // 将响应转换为JSON  
+            .then(data => {  
+                
+                const templateContainer = document.getElementById('container');  
+                data.items.forEach(item => {  
+                    // 创建模板的HTML结构并填充数据  
+                    const template = `  
+                        <div class="card">  
+                            <p>${item.description}</p>  
+                            <a href=${item.url}>点击前往官网了解更多详情</a></br>  
+                            <img src=${item.img} alt=${item.name}>  
+                        </div>  
+                    `;  
+                    // 将模板添加到容器中  
+                    templateContainer.innerHTML += template;  
+                });  
+                // 在这里添加事件监听器，确保只有在数据已经获取并填充后才添加  
+                var pageDivs = document.getElementsByClassName('card'); // 获取所有page div的DOM对象集合    
+                var currentPage = 0; // 当前显示的page div的索引号    
+                var totalPage = pageDivs.length-1; // 总共的page div数量    
+  
+                // 显示第index个page div，并隐藏其他div    
+                function showPage(event) {    
+                  for (var i = 0; i < pageDivs.length; i++) {    
+                    pageDivs[i].style.display = (i === currentPage) ? 'block' : 'none';    
+                  }  
+                  currentPage++; // 增加当前页数    
+                  if (currentPage > totalPage) { // 如果已经到达最后一页，重置为第一页    
+                    currentPage = 0;    
+                  }    
+                }    
+                
+                document.addEventListener('click',showPage);  
+            })  
+            .catch(error => {  
+                console.error('Error fetching the JSON file', error);  
+            });  
     </script>
 </body>
 </html>
