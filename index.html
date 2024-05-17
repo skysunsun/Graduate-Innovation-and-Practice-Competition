@@ -6,25 +6,39 @@
 		<title>重庆交通大学研究生创新实践竞赛</title>
 		<style>
 			body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-						 h1 { color: #333; }
+									 h1 { color: #333; }
 
-						 p { color: #666; line-height: 1.5; }
-						 img { max-width: 200px; }
-						 ul {
-							 list-style: none;
-			    list-style-position: inside; /* 将项目符号设置在列表项内部 */
-			    text-align: left; /* 设置列表项文本左对齐 */
-			    display: inline-block; /* 将无序列表设置为行内块元素 */
-			    margin: 0 auto; /* 水平居中 */
+									 p { color: #666; line-height: 1.5; }
+
+									 ul {
+										 list-style: none;
+						    list-style-position: inside; /* 将项目符号设置在列表项内部 */
+						    text-align: left; /* 设置列表项文本左对齐 */
+						    display: inline-block; /* 将无序列表设置为行内块元素 */
+						    margin: 0 auto; /* 水平居中 */
+						}
+									 li { margin-bottom: 10px;
+									 font-size: 1.17em}
+									 a { color: #337ab7; text-decoration: none; }
+									 a:hover { text-decoration: underline; }
+
+									 #zt1{
+
+			color: red;
+									   }
+			#image-slider{
+				margin: auto;
+				width: 1600px;
+				height: 900px;
+
 			}
-						 li { margin-bottom: 10px;
-						 font-size: 1.17em}
-						 a { color: #337ab7; text-decoration: none; }
-						 a:hover { text-decoration: underline; }
+			#slideshow{
 
-						 #zt1{
-color: red;
-						   }
+			  width: 100%;
+			  height: 100%;
+			  object-fit: fill;
+
+			}
 		</style>
 	</head>
 	<body>
@@ -35,13 +49,19 @@ color: red;
 		<div>
 			<ul>
 				<li>1. 点击右下角<span id="zt1">更多</span</li>
-				<li>2. 选择<span id="zt1">身份绑定</span></li>
-				<li>3. 搜索<span id="zt1">重庆交通大学研究生院并选择</span></li>
+								<li>2. 选择<span id="zt1">身份绑定</span>
+				</li>
+				<li>3. 搜索<span id="zt1">重庆交通大学研究生院并选择</span>
+				</li>
 
-			<div>
-			<h4 style=" text-align: center";><span style="background-color: yellow">账号: 学号</span></h4>
-		<h4 style=" text-align: center";><span style="background-color: yellow">密码: Cqu@学号后六位</span></h4>
-</div>
+				<div>
+					<h4 style=" text-align: center" ;>
+						<span style="background-color: yellow">账号: 学号</span>
+					</h4>
+					<h4 style=" text-align: center" ;>
+						<span style="background-color: yellow">密码: Cqu@学号后六位</span>
+					</h4>
+				</div>
 				<li>4. <span id="zt1"> 点击我的</span>选择课程</li>
 				<li>5. 选择<span id="zt1">我听的课</span>即可获取更多学习资料</li>
 			</ul>
@@ -59,5 +79,40 @@ color: red;
 		<p>
 			<a href="http://kh.cqu.edu.cn/" target="_blank">点击前往重庆市"科慧杯"研究生创新创业大赛官网</a>
 		</p>
+
+		<div id="image-slider">
+			<img id="slideshow" src="https://s21.ax1x.com/2024/05/17/pkuAzLD.png" alt="Slideshow">
+		</div>
+
+		<script>
+			let imageIndex = 0;
+			const images = [
+			      'https://s21.ax1x.com/2024/05/17/pkuVWuT.jpg',
+			      'https://s21.ax1x.com/2024/05/17/pkuV5E4.jpg',
+				  'https://s21.ax1x.com/2024/05/17/pkuVo59.jpg',
+			        // ... 添加更多图片路径
+			    ];
+			// fetch('data.json') // 通过fetch API获取JSON文件
+            // .then(response => response.json()) // 将响应转换为JSON
+            // .then(data => {
+
+            //     data.items.forEach(item => {
+			// 			images.push(item.img);
+
+            //     })});
+
+			    const imageElement = document.getElementById('slideshow');
+
+			    function changeImage() {
+			        imageElement.src = images[imageIndex];
+			        imageIndex++;
+			        if (imageIndex === images.length) {
+			            imageIndex = 0; // 重置到第一张图片
+			        }
+			    }
+
+			    // 每3秒更改一次图片（3000毫秒）
+			    setInterval(changeImage, 2000);
+		</script>
 	</body>
 </html>
