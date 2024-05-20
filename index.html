@@ -107,20 +107,24 @@
 
 					// 提取每个链接的文件名
 					for (var i = 0; i < links.length; i++) {
-					var link = links[i];
-					var filename = link.getAttribute("href").split("/").pop();
+						var link = links[i];
+						try{
+							var filename = link.getAttribute("title").split("/").pop();
 								// 检查文件名是否以图片格式结尾
-								if (filename.match(/\.(jpg|jpeg|png|gif)$/i)) {
-								
-			images.push(`${folder}${filename}`);
+							if (filename.match(/\.(jpg|jpeg|png|gif)$/i)){
 
+								images.push(`${folder}${filename}`);}
+							}catch(error){
+
+					}
+					
 			}
 					}
 
 				}
-				};
+
 				xhr.send();
-			}
+			};
 
 			// 调用获取文件名函数
 			getFilenames();
