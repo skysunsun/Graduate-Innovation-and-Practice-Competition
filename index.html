@@ -87,47 +87,51 @@
 							'https://s21.ax1x.com/2024/05/17/pkuAzLD.png',
 							// ... 添加更多图片路径
 							];
+							
+							
+			// var root_ = 'https://github.com/skysunsun/Graduate-Innovation-and-Practice-Competition/tree/main/img/'
 			
-			var folder = "img/"; // 图片文件夹的路径
+			// var folder = "img/"; // 图片文件夹的路径
 
-				// 获取文件夹中的文件名
-			function getFilenames() {
-				// 创建一个XMLHttpRequest对象
-				var xhr = new XMLHttpRequest();
-				// 发送GET请求，获取当前文件夹的内容
-				xhr.open("GET", folder, true);
-				xhr.onreadystatechange = function() {
-				if (xhr.readyState === 4 && xhr.status === 200) {
-					// 解析响应文本为HTML
-					var parser = new DOMParser();
-					var htmlDoc = parser.parseFromString(xhr.responseText, "text/html");
+			// 	// 获取文件夹中的文件名
+			// function getFilenames() {
+			// 	// 创建一个XMLHttpRequest对象
+			// 	var xhr = new XMLHttpRequest();
+			// 	// 发送GET请求，获取当前文件夹的内容
+			// 	xhr.open("GET", root_, true);
+			// 	xhr.onreadystatechange = function() {
+			// 	if (xhr.readyState === 4 && xhr.status === 200) {
+			// 		// 解析响应文本为HTML
+			// 		var parser = new DOMParser();
+			// 		var htmlDoc = parser.parseFromString(xhr.responseText, "text/html");
 
-					// 获取所有A元素（链接）的href属性
-					var links = htmlDoc.querySelectorAll("a");
+			// 		// 获取所有A元素（链接）的href属性
+			// 		var links = htmlDoc.querySelectorAll("a");
 
-					// 提取每个链接的文件名
-					for (var i = 0; i < links.length; i++) {
-						var link = links[i];
-						try{
-							var filename = link.getAttribute("title").split("/").pop();
-								// 检查文件名是否以图片格式结尾
-							if (filename.match(/\.(jpg|jpeg|png|gif)$/i)){
+			// 		// 提取每个链接的文件名
+			// 		for (var i = 0; i < links.length; i++) {
+			// 			var link = links[i];
+			// 			try{
+			// 				var filename = link.getAttribute("title").split("/").pop();
+			// 					// 检查文件名是否以图片格式结尾
+			// 				if (filename.match(/\.(jpg|jpeg|png|gif)$/i)){
 
-								images.push(`${folder}${filename}`);}
-							}catch(error){
+			// 					images.push(`${root_}${filename}`);}
+			// 				}catch(error){
+			// 					console.error(error)
 
-					}
+			// 		}
 					
-			}
-					}
+			// }
+			// 		}
 
-				}
+			// 	}
 
-				xhr.send();
-			};
+			// 	xhr.send();
+			// };
 
-			// 调用获取文件名函数
-			getFilenames();
+			// // 调用获取文件名函数
+			// getFilenames();
 
 			let imageIndex = 0;
 
